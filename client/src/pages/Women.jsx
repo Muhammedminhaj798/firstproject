@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import useFetch from '../useFetch'
-import { userContext } from './Context'
 import { Link } from 'react-router-dom'
+import { productContext } from '../context/Context'
 
 function Women() {
   const [women,setWomen] = useState([])
-  const { data } = useContext(userContext)
+  const { data } = useContext(productContext)
 
   useEffect(()=>{
     if (women){

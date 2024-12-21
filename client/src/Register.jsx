@@ -8,6 +8,7 @@ function Register() {
     email: "",
     password: "",
     cpassword: "",
+    cartItems:[]
   });
   const handleFocus = ()=>{
     setFocus(true)

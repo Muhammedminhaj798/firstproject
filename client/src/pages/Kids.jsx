@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import { userContext } from "./Context";
 import { Link } from "react-router-dom";
+import { productContext } from "./Context";
 
 function Kids() {
   const [kids, setKids] = useState([]);
-  const { data } = useContext(userContext);
+  const { data } = useContext(productContext);
 
 
   useEffect(() => {

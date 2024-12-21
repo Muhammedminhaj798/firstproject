@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { userContext } from './Context'
+import { productContext } from '../context/Context';
+
 
 function ProdectDetails() {
     const {id} = useParams()
-    const {data} = useContext(userContext)
+    const {data} = useContext(productContext)
     console.log(data);
     
     const [state,setState] = useState([])

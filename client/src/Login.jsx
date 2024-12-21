@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import {userContext} from './context/UserContext'
 
 function Login() {
   const [input,setInput] = useState({
-        userName : '',
         email : '',
         password : ''
   })
+  const {datas} = useContext(userContext)
+  console.log(datas);
+  
   console.log("input",  input);
   
   const handleFocus = ()=>{
@@ -23,7 +26,16 @@ function Login() {
 
   const handleData =async (e) => {
     e.preventDefault()
-    // navigate("/")
+    const user = datas.find((item) => item.email === input.email && item.password === input.password)
+    if(user){
+      localStorage.setItem('loginUser',JSON.stringify(user))
+      alert('login successfully')
+      navigate("/")
+    }else{
+      alert('invalid')
+      navigate('/register')
+    }
+    
 
   
   }
@@ -39,19 +51,6 @@ function Login() {
     <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="bg-yellow-700 p-14 rounded-lg shadow-lg">
         <form onSubmit={handleData} className="flex flex-col gap-4">
-          <input
-            type="text"
-            // pattern="^[A-Za-z0-9].{2,16}"
-            placeholder="User name"
-            onChange={handleChange}
-            value={input.userName}
-            focus={focus.errName.toString()}
-            onBlur={()=>setFocus({...focus, errName:true})}
-            required
-            name="userName"
-            className="p-2 rounded border border-gray-300"
-          />
-          <br />
           <input
             type="email"
             onChange={handleChange}
