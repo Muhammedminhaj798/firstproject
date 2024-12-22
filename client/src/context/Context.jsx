@@ -1,32 +1,27 @@
-import React, { createContext, useEffect, useState } from "react";
-import useFetch from "../useFetch";
 import axios from "axios";
-export const productContext = createContext();
+import React, { createContext, useEffect, useState } from "react";
+
+export const ProductContext = createContext();
+
 function Context({ children }) {
-  const { data } = useFetch("http://localhost:3000/product");
-const [datas,setDatas]=useState([])
+  const [data, setData] = useState([]);
 
+  useEffect(() => {
+    const fetch = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/product");
+        setData(response.data);
+      } catch (error) {
+        console.error("Error is : ", error);
+      }
+    };
+    fetch();
+  }, []); // Empty dependency array to avoid infinite loop
 
-
-  // useEffect(()=>{
-  //   const featch = async()=>{
-  //     const response =await axios.get('http://localhost:3000/user')
-  //     console.log(response.data);
-  //     setDatas(response.data)
-  //   }
-  //   featch()
-  // },[])
-  // console.log("datas",datas);
-
-
-
-  // console.log("datas",datas);
   return (
-    <div>
-      <productContext.Provider value={{ data }}>
-        {children}
-      </productContext.Provider>
-    </div>
+    <ProductContext.Provider value={{ data }}>
+      {children}
+    </ProductContext.Provider>
   );
 }
 

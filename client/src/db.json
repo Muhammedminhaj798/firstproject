@@ -748,7 +748,45 @@
       "id": "3977",
       "username": "minhaj",
       "email": "minhaj@gmail.com",
-      "password": "minhaj"
+      "password": "minhaj",
+      "cart": [
+        {
+          "id": "1",
+          "name": "Men’s Black Running",
+          "type": "men",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005-400x400.jpg",
+          "price": "996",
+          "qty": 37,
+          "description": "Comfortable and durable black running shoes for men.",
+          "brand": "Recycled Shoes",
+          "rating": 4.5,
+          "reviews": 12
+        },
+        {
+          "id": "6",
+          "name": "Men’s Moonstone Sneaker",
+          "type": "men",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-018-600x600.jpg",
+          "price": 749,
+          "qty": 4,
+          "description": "Moonstone sneakers with a modern design.",
+          "brand": "Recycled Shoes",
+          "rating": 4.5,
+          "reviews": 11
+        },
+        {
+          "id": "2",
+          "name": "Men’s Classic Blue",
+          "type": "men",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019-600x600.jpg",
+          "price": "1600",
+          "qty": 8,
+          "description": "Classic blue sneakers perfect for everyday wear.",
+          "brand": "Recycled Shoes",
+          "rating": 4.7,
+          "reviews": 8
+        }
+      ]
     },
     {
       "id": "0761",
@@ -761,6 +799,74 @@
       "username": "minhaj",
       "email": "minhaj123@gmail.com",
       "password": "minhaj"
+    },
+    {
+      "id": "6fba",
+      "username": "minhaj.e",
+      "email": "muhammedminhaj@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "8333",
+      "username": "muhammed minhaj",
+      "email": "minhaj123@gmail.com",
+      "password": "121212",
+      "cart": [
+        {
+          "id": "1",
+          "name": "Men’s Black Running",
+          "type": "men",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005-400x400.jpg",
+          "price": "996",
+          "qty": 8,
+          "description": "Comfortable and durable black running shoes for men.",
+          "brand": "Recycled Shoes",
+          "rating": 4.5,
+          "reviews": 12
+        },
+        {
+          "id": "4",
+          "name": "Men’s Earth-Tone Sneaker",
+          "type": "men",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-017-600x600.jpg",
+          "price": 749,
+          "qty": 1,
+          "description": "Earth-tone sneakers with excellent comfort.",
+          "brand": "Recycled Shoes",
+          "rating": 4.3,
+          "reviews": 15
+        },
+        {
+          "id": "5",
+          "name": "Men’s Green Running",
+          "type": "men",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-007-600x600.jpg",
+          "price": 769,
+          "qty": 1,
+          "description": "Green running shoes designed for maximum performance.",
+          "brand": "Recycled Shoes",
+          "rating": 4.4,
+          "reviews": 9
+        },
+        {
+          "id": "9",
+          "name": "Women’s Blue Training",
+          "type": "women",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-003-600x600.jpg",
+          "price": 660,
+          "qty": 4,
+          "description": "Blue training shoes designed for women.",
+          "brand": "Recycled Shoes",
+          "rating": 4.2,
+          "reviews": 14
+        }
+      ]
+    },
+    {
+      "id": "eeac",
+      "username": "minzafathima",
+      "email": "minza@gmail.com",
+      "password": "000000"
     }
   ]
 }

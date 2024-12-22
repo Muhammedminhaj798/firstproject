@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";  
 import axios from "axios";
-export const userContext = createContext();
+
+export const UsersContext = createContext();
 function UserContext({ children }) {
 
 const [datas,setDatas]=useState([])
@@ -23,9 +24,9 @@ const [datas,setDatas]=useState([])
   // console.log("datas",datas);
   return (
     <div>
-      <userContext.Provider value={{ datas }}>
+      <UsersContext.Provider value={{ datas }}>
         {children}
-      </userContext.Provider>
+      </UsersContext.Provider>
     </div>
   );
 }

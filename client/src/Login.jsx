@@ -1,14 +1,14 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import {userContext} from './context/UserContext'
+import { UsersContext } from "./context/UserContext";
 
 function Login() {
   const [input,setInput] = useState({
         email : '',
         password : ''
   })
-  const {datas} = useContext(userContext)
+  const {datas} = useContext(UsersContext)
   console.log(datas);
   
   console.log("input",  input);

@@ -14,13 +14,13 @@ import Kids from "./pages/Kids";
 import Cart from "./pages/Cart";
 import ProdectDetails from "./pages/ProdectDetails";
 import CartProvider from "./context/CartProvider";
-import UserContext from "./context/UserContext";
-import Context from "./context/Context";
+import UsersProvider from "./context/UserContext"; 
+import AuthProvider from "./context/AuthProvider"; 
 
 function App() {
   return (
-    <Context>
-      <UserContext>
+    <UsersProvider>
+      <AuthProvider>
         <CartProvider>
           <Navbar />
           <Routes>
@@ -52,8 +52,8 @@ function App() {
           </Routes>
           <Footer />
         </CartProvider>
-      </UserContext>
-    </Context>
+      </AuthProvider>
+    </UsersProvider>
   );
 }
 
