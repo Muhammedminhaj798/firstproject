@@ -811,6 +811,61 @@
       "username": "muhammed minhaj",
       "email": "minhaj123@gmail.com",
       "password": "121212",
+      "cart": []
+    },
+    {
+      "id": "eeac",
+      "username": "minzafathima",
+      "email": "minza@gmail.com",
+      "password": "000000"
+    },
+    {
+      "id": "a32f",
+      "username": "shahid",
+      "email": "shahid123@gmail.com",
+      "password": "shahid"
+    },
+    {
+      "id": "8320",
+      "username": "shahid",
+      "email": "shahid123@gmail.com",
+      "password": "121212"
+    },
+    {
+      "id": "0084",
+      "username": "nihal",
+      "email": "nihal123@gmail.com",
+      "password": "111111"
+    },
+    {
+      "id": "f02d",
+      "username": "shahid",
+      "email": "shahid123@gmail.com",
+      "password": "111111"
+    },
+    {
+      "id": "2bcb",
+      "username": "nihal",
+      "email": "nihal123@gmail.com",
+      "password": "111111"
+    },
+    {
+      "id": "dc13",
+      "username": "nihal",
+      "email": "nihal123@gmail.com",
+      "password": "000000"
+    },
+    {
+      "id": "cf2e",
+      "username": "sinan",
+      "email": "sinan123@gmail.com",
+      "password": "222222"
+    },
+    {
+      "id": "33d7",
+      "username": "aginas",
+      "email": "aginas@gmail.com",
+      "password": "999999",
       "cart": [
         {
           "id": "1",
@@ -818,55 +873,32 @@
           "type": "men",
           "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005-400x400.jpg",
           "price": "996",
-          "qty": 8,
+          "qty": 1,
           "description": "Comfortable and durable black running shoes for men.",
           "brand": "Recycled Shoes",
           "rating": 4.5,
           "reviews": 12
         },
         {
-          "id": "4",
-          "name": "Men’s Earth-Tone Sneaker",
+          "id": "eb74",
+          "name": "GAZELLE BOLD",
+          "description": "These adidas Gazelle shoes take your everyday style and kick it up a notch. First made as training shoes in the '60s, and now an iconic lifestyle staple, the Gazelle seamlessly transitions from day to night.",
           "type": "men",
-          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-017-600x600.jpg",
-          "price": 749,
-          "qty": 1,
-          "description": "Earth-tone sneakers with excellent comfort.",
-          "brand": "Recycled Shoes",
-          "rating": 4.3,
-          "reviews": 15
-        },
-        {
-          "id": "5",
-          "name": "Men’s Green Running",
-          "type": "men",
-          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-007-600x600.jpg",
-          "price": 769,
-          "qty": 1,
-          "description": "Green running shoes designed for maximum performance.",
-          "brand": "Recycled Shoes",
-          "rating": 4.4,
-          "reviews": 9
-        },
-        {
-          "id": "9",
-          "name": "Women’s Blue Training",
-          "type": "women",
-          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-003-600x600.jpg",
-          "price": 660,
-          "qty": 4,
-          "description": "Blue training shoes designed for women.",
-          "brand": "Recycled Shoes",
-          "rating": 4.2,
-          "reviews": 14
+          "price": "11000",
+          "brand": "Adidas",
+          "rating": "4.5",
+          "reviews": "40",
+          "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/841e5a9d062840f4b28979a1fea26d50_9366/GAZELLE_BOLD_SHOES_Blue_IE0430_06_standard.jpg",
+          "qty": 1
         }
       ]
     },
     {
-      "id": "eeac",
-      "username": "minzafathima",
-      "email": "minza@gmail.com",
-      "password": "000000"
+      "id": "4a05",
+      "username": "aare",
+      "email": "arf@sgf.dfg",
+      "password": "000000",
+      "cpassword": "000000"
     }
   ]
 }

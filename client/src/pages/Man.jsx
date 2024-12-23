@@ -20,6 +20,7 @@ function Man() {
   const handleAddToCart = (product) => {
     if (user) {
       addToCart(product);
+      alert('add to cart')
     } else {
       alert("Please log in to add products to the cart.");
       navigate("/login");

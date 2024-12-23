@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 
 function Navbar() {
   return (
-    <div className="bg-yellow-100">
+    <div className="bg-yellow-100 fixed w-full z-50">
       <div className="bg-slate-400">
         <p className="text-center text-sm md:text-base">Welcome to shopiee</p>
       </div>

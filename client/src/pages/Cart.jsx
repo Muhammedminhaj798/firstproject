@@ -4,27 +4,31 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Cart = () => {
-  const { Cart, setCart, removeFromCart } = useContext(CartContext);
+  const { cart, setCart, removeFromCart } = useContext(CartContext);
   const [user, setUser] = useState(null);
-  const [showNotification, setShowNotification] = useState(false); // Manage notification state
+  const [showNotification, setShowNotification] = useState(false); 
   const navigate = useNavigate();
+  const [data, setData] = useState([])
+  console.log(data);
 
   useEffect(() => {
     const loggedInUser = JSON.parse(localStorage.getItem("loginUser"));
     if (loggedInUser) {
       setUser(loggedInUser);
-      setCart(loggedInUser.cart || []); // Use lowercase `cart` to match update logic
+      setCart(loggedInUser.cart || []);   
     } else {
       navigate("/login");
     }
   }, [setCart, navigate]);
+
+console.log(cart);
 
   const updateCartInDatabase = async (updatedCart) => {
     if (user) {
       try {
         const updatedUser = { ...user, cart: updatedCart };
         await axios.put(`http://localhost:3000/user/${user.id}`, updatedUser);
-        localStorage.setItem("loginUser", JSON.stringify(updatedUser)); // Save full user object
+        localStorage.setItem("loginUser", JSON.stringify(updatedUser)); 
         setCart(updatedCart);
       } catch (error) {
         console.error("Error updating cart in database: ", error);
@@ -33,38 +37,41 @@ const Cart = () => {
   };
 
   const handleIncreaseQty = (id) => {
-    const updatedCart = Cart.map((item) =>
+    const updatedCart = cart.map((item) =>
       item.id === id ? { ...item, qty: item.qty + 1 } : item
     );
     updateCartInDatabase(updatedCart);
   };
 
   const handleDecreaseQty = (id) => {
-    const updatedCart = Cart.map((item) =>
+    const updatedCart = cart.map((item) =>
       item.id === id && item.qty > 1 ? { ...item, qty: item.qty - 1 } : item
     );
     updateCartInDatabase(updatedCart);
   };
 
   const handleRemoveFromCart = (id) => {
-    const updatedCart = Cart.filter((item) => item.id !== id);
+    const updatedCart = cart.filter((item) => item.id !== id);
     setShowNotification(true);
-    setTimeout(() => setShowNotification(false), 3000); // Auto-hide notification after 3 seconds
+    setTimeout(() => setShowNotification(false), 3000);
     updateCartInDatabase(updatedCart);
   };
 
   const calculateTotal = () =>
-    Cart.reduce((total, item) => total + item.price * item.qty, 0);
+    cart.reduce((total, item) => total + item.price * item.qty, 0);
 
   const handlePayment = () => navigate("/payment");
 
-  if (!Cart || Cart.length === 0) return <h2>Your Cart is empty!</h2>;
+  if (!cart || cart.length === 0) return <h2>Your Cart is empty!</h2>;
+const User = localStorage.getItem('loginUser')
+
 
   return (
+
     <div className="container mx-auto p-4">
       <h2 className="text-2xl font-bold mb-4 text-center">Your Cart</h2>
       <ul className="space-y-4">
-        {Cart.map((item) => (
+        {cart.map((item) => (
           <li
             key={item.id}
             className="flex items-center gap-4 p-4 bg-gray-100 rounded-lg shadow-md"
@@ -116,7 +123,7 @@ const Cart = () => {
         <div className="fixed bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-md">
           Product removed from cart
         </div>
-      )}
+      )};
     </div>
   );
 };

@@ -27,7 +27,7 @@ function CartProvider({ children }) {
        item.id === product.id ? {...item, qty: item.qty +1} : item
     );
     }else{
-        updatedCart = [...cart, {...product, qty : 1}];
+        updatedCart = [...cart, {...product, qty : 1}]
     }
     setCart(updatedCart);
 
@@ -65,7 +65,8 @@ function CartProvider({ children }) {
   return (
     <div>
       <CartContext.Provider
-        value={{ cart, addToCart, removeFromCart, setCart }}>
+        value={{ cart, addToCart, removeFromCart, setCart }}
+      >
         {children}
       </CartContext.Provider>
     </div>

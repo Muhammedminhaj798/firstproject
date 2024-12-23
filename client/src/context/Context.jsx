@@ -16,7 +16,7 @@ function Context({ children }) {
       }
     };
     fetch();
-  }, []); // Empty dependency array to avoid infinite loop
+  }, []);
 
   return (
     <ProductContext.Provider value={{ data }}>

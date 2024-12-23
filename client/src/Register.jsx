@@ -33,6 +33,7 @@ function Register() {
         username : input.username,
         email:input.email,
         password:input.password,
+        cpassword:input.cpassword,
       });
 
       alert("user registered successfully")
@@ -55,11 +56,11 @@ function Register() {
         <form onSubmit={handleData} className="flex flex-col gap-4">
           <div>
             <input
-              id="input"
+              id="name"
               type="text"
               pattern="^[A-Za-z0-9].{2,16}"
               placeholder="Username"
-              className="p-2 rounded border border-gray-300 w-full"
+              className="input p-2 rounded border border-gray-300 w-full"
               name="username"
               required
               onBlur={()=>setFocus({...focus , errName:true})}
@@ -74,13 +75,13 @@ function Register() {
 
           <div>
             <input
-              id="input"
+              id="email"
               type="email"  
               placeholder="E-mail"
               required
               onBlur={()=>setFocus({...focus , errEmail:true})}
               focus ={focus.errEmail.toString()}
-              className="p-2 rounded border border-gray-300 w-full"
+              className="input p-2 rounded border border-gray-300 w-full"
               name="email"
               value={input.email}
               onChange={handleChange}
@@ -92,14 +93,14 @@ function Register() {
 
           <div>
             <input
-              id="input"
+              id="password"
               pattern="^.{6}$"
               type="password"
               placeholder="Enter Your Password"
               required
               onBlur={()=>setFocus({...focus , errPassword:true})}
               focus ={focus.errPassword.toString()}
-              className="p-2 rounded border border-gray-300 w-full"
+              className="input p-2 rounded border border-gray-300 w-full"
               name="password"
               value={input.password}
               onChange={handleChange}
@@ -111,14 +112,14 @@ function Register() {
 
           <div>
             <input
-              id="input"
+              id="Cpassword"
               type="password"
               placeholder="Confirm Your Password"
               required
               onBlur={()=>setFocus({...focus , errCpassword:true})}
               focus ={focus.errCpassword.toString()}
               pattern={input.password}
-              className="p-2 rounded border border-gray-300 w-full"
+              className="input p-2 rounded border border-gray-300 w-full"
               name="cpassword"
               value={input.cpassword}
               onChange={handleChange}

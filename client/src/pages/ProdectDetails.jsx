@@ -75,8 +75,6 @@ function ProdectDetails() {
             </div>
           </div>
         ))}
-      
-
     </div>
   )
 }

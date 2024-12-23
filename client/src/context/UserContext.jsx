@@ -11,9 +11,7 @@ const [datas,setDatas]=useState([])
   useEffect(()=>{
     const featch = async()=>{
       const response =await axios.get('http://localhost:3000/user')
-      console.log(response.data);
       setDatas(response.data)
-    
     }
     featch()
   },[])
