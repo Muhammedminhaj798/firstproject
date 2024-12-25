@@ -5,11 +5,11 @@ import { CgProfile } from "react-icons/cg";
 
 function Navbar() {
   return (
-    <div className="bg-yellow-100 fixed w-full z-50">
+    <div className="bg-yellow-100 w-full z-50">
       <div className="bg-slate-400">
         <p className="text-center text-sm md:text-base">Welcome to shopiee</p>
       </div>
-      <nav className="flex flex-wrap items-center p-4 md:p-6 bg-zinc-500 justify-between">
+      <nav className="flex flex-wrap items-center p-4 md:p-6 bg-zinc-500 justify-between h-20">
         <div className="flex items-center gap-4 md:gap-6">
           <Link>
             <img 

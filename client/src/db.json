@@ -868,28 +868,28 @@
       "password": "999999",
       "cart": [
         {
-          "id": "1",
-          "name": "Men’s Black Running",
-          "type": "men",
-          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005-400x400.jpg",
-          "price": "996",
+          "id": "1010",
+          "name": "kid’s Classic Blue",
+          "type": "kid",
+          "image": "https://i.pinimg.com/736x/73/65/95/7365952f9294e7f5cb67bae909bdfa0d.jpg",
+          "price": 1699,
           "qty": 1,
-          "description": "Comfortable and durable black running shoes for men.",
+          "description": "Classic blue sneakers perfect for everyday wear.",
           "brand": "Recycled Shoes",
-          "rating": 4.5,
-          "reviews": 12
+          "rating": 4.7,
+          "reviews": 8
         },
         {
-          "id": "eb74",
-          "name": "GAZELLE BOLD",
-          "description": "These adidas Gazelle shoes take your everyday style and kick it up a notch. First made as training shoes in the '60s, and now an iconic lifestyle staple, the Gazelle seamlessly transitions from day to night.",
-          "type": "men",
-          "price": "11000",
-          "brand": "Adidas",
-          "rating": "4.5",
-          "reviews": "40",
-          "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/841e5a9d062840f4b28979a1fea26d50_9366/GAZELLE_BOLD_SHOES_Blue_IE0430_06_standard.jpg",
-          "qty": 1
+          "id": "9",
+          "name": "Women’s Blue Training",
+          "type": "women",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-003-600x600.jpg",
+          "price": 660,
+          "qty": 1,
+          "description": "Blue training shoes designed for women.",
+          "brand": "Recycled Shoes",
+          "rating": 4.2,
+          "reviews": 14
         }
       ]
     },

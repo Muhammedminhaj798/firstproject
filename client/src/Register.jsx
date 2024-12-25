@@ -8,17 +8,17 @@ function Register() {
     email: "",
     password: "",
     cpassword: "",
-    cartItems:[]
+    cartItems: [],
   });
-  const handleFocus = ()=>{
-    setFocus(true)
-  }
+  const handleFocus = () => {
+    setFocus(true);
+  };
   const [focus, setFocus] = useState({
-    errName : false,
-    errEmail:false,
-    errPassword:false,
-    errCpassword:false
-  })
+    errName: false,
+    errEmail: false,
+    errPassword: false,
+    errCpassword: false,
+  });
 
   const navigate = useNavigate();
 
@@ -29,18 +29,18 @@ function Register() {
       return;
     }
     try {
-      await axios.post('http://localhost:3000/user',{
-        username : input.username,
-        email:input.email,
-        password:input.password,
-        cpassword:input.cpassword,
+      await axios.post("http://localhost:3000/user", {
+        username: input.username,
+        email: input.email,
+        password: input.password,
+        cpassword: input.cpassword,
       });
 
-      alert("user registered successfully")
+      alert("user registered successfully");
       navigate("/login");
     } catch (error) {
       console.error("Erro registering user:", error);
-      alert('An error occurred while registering. Please try again.')
+      alert("An error occurred while registering. Please try again.");
     }
   };
 
@@ -63,8 +63,8 @@ function Register() {
               className="input p-2 rounded border border-gray-300 w-full"
               name="username"
               required
-              onBlur={()=>setFocus({...focus , errName:true})}
-              focus ={focus.errName.toString()}
+              onBlur={() => setFocus({ ...focus, errName: true })}
+              focus={focus.errName.toString()}
               value={input.username}
               onChange={handleChange}
             />
@@ -76,11 +76,11 @@ function Register() {
           <div>
             <input
               id="email"
-              type="email"  
+              type="email"
               placeholder="E-mail"
               required
-              onBlur={()=>setFocus({...focus , errEmail:true})}
-              focus ={focus.errEmail.toString()}
+              onBlur={() => setFocus({ ...focus, errEmail: true })}
+              focus={focus.errEmail.toString()}
               className="input p-2 rounded border border-gray-300 w-full"
               name="email"
               value={input.email}
@@ -98,15 +98,15 @@ function Register() {
               type="password"
               placeholder="Enter Your Password"
               required
-              onBlur={()=>setFocus({...focus , errPassword:true})}
-              focus ={focus.errPassword.toString()}
+              onBlur={() => setFocus({ ...focus, errPassword: true })}
+              focus={focus.errPassword.toString()}
               className="input p-2 rounded border border-gray-300 w-full"
               name="password"
               value={input.password}
               onChange={handleChange}
             />
             <span id="span" className="text-xs text-gray-200 block mt-1">
-            password minimum 6  characters
+              password minimum 6 characters
             </span>
           </div>
 
@@ -116,8 +116,8 @@ function Register() {
               type="password"
               placeholder="Confirm Your Password"
               required
-              onBlur={()=>setFocus({...focus , errCpassword:true})}
-              focus ={focus.errCpassword.toString()}
+              onBlur={() => setFocus({ ...focus, errCpassword: true })}
+              focus={focus.errCpassword.toString()}
               pattern={input.password}
               className="input p-2 rounded border border-gray-300 w-full"
               name="cpassword"

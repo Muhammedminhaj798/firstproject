@@ -16,6 +16,8 @@ import ProdectDetails from "./pages/ProdectDetails";
 import CartProvider from "./context/CartProvider";
 import UsersProvider from "./context/UserContext"; 
 import AuthProvider from "./context/AuthProvider"; 
+import Payment from "./pages/Payment";
+
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
             <Route path="/kids" element={<Kids />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/payment_details" element={<Payment/>}/>
             <Route
               path="/man/productdetails/:id"
               element={<ProdectDetails />}

@@ -60,7 +60,7 @@ console.log(cart);
   const calculateTotal = () =>
     cart.reduce((total, item) => total + item.price * item.qty, 0);
 
-  const handlePayment = () => navigate("/payment");
+  const handlePayment = () => navigate("/payment_details");
 
   if (!cart || cart.length === 0) return <h2>Your Cart is empty!</h2>;
 const User = localStorage.getItem('loginUser')
@@ -68,7 +68,7 @@ const User = localStorage.getItem('loginUser')
 
   return (
 
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 pt-36 h-screen">
       <h2 className="text-2xl font-bold mb-4 text-center">Your Cart</h2>
       <ul className="space-y-4">
         {cart.map((item) => (
@@ -123,7 +123,7 @@ const User = localStorage.getItem('loginUser')
         <div className="fixed bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-md">
           Product removed from cart
         </div>
-      )};
+      )}
     </div>
   );
 };
