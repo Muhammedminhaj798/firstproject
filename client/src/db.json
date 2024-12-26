@@ -866,32 +866,7 @@
       "username": "aginas",
       "email": "aginas@gmail.com",
       "password": "999999",
-      "cart": [
-        {
-          "id": "1010",
-          "name": "kid’s Classic Blue",
-          "type": "kid",
-          "image": "https://i.pinimg.com/736x/73/65/95/7365952f9294e7f5cb67bae909bdfa0d.jpg",
-          "price": 1699,
-          "qty": 1,
-          "description": "Classic blue sneakers perfect for everyday wear.",
-          "brand": "Recycled Shoes",
-          "rating": 4.7,
-          "reviews": 8
-        },
-        {
-          "id": "9",
-          "name": "Women’s Blue Training",
-          "type": "women",
-          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-003-600x600.jpg",
-          "price": 660,
-          "qty": 1,
-          "description": "Blue training shoes designed for women.",
-          "brand": "Recycled Shoes",
-          "rating": 4.2,
-          "reviews": 14
-        }
-      ]
+      "cart": []
     },
     {
       "id": "4a05",
@@ -899,6 +874,13 @@
       "email": "arf@sgf.dfg",
       "password": "000000",
       "cpassword": "000000"
+    },
+    {
+      "id": "f8f2",
+      "username": "shamsudheen",
+      "email": "shamsu123@gmail.com",
+      "password": "123456",
+      "cpassword": "123456"
     }
   ]
 }

@@ -4,6 +4,9 @@ import { FaShoppingCart } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 
 function Navbar() {
+  const clickToLogout = () =>{
+    localStorage.removeItem('loginUser')
+  }
   return (
     <div className="bg-yellow-100 w-full z-50">
       <div className="bg-slate-400">
@@ -32,6 +35,9 @@ function Navbar() {
           </Link>
           <Link to="/register" className="flex items-center">
             <CgProfile className="w-5 h-5 md:w-6 md:h-6 text-white" />
+          </Link>
+          <Link to={'/'}>
+          <button onClick={clickToLogout}>Logout</button>
           </Link>
         </div>
       </nav>

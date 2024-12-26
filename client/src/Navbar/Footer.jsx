@@ -6,7 +6,7 @@ function Footer() {
     <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 mt-64">
       <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <div> 
+          <div>
             <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" />
             <p class="max-w-xs mt-4 text-sm text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,

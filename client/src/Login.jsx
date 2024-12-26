@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { UsersContext } from "./context/UserContext";
 
@@ -25,8 +25,8 @@ function Login() {
   const navigate = useNavigate();
 
   const handleData =async (e) => {
-    e.preventDefault()
-    const user = datas.find((item) => item.email === input.email && item.password === input.password)
+  
+    const user = datas.find((item) => item.email == input.email && item.password == input.password)
     if(user){
       localStorage.setItem('loginUser',JSON.stringify(user))
       alert('login successfully')
@@ -77,6 +77,7 @@ function Login() {
           >
             Login
           </button>
+          <Link to={'/register'}>Create a new Account</Link>
         </form>
       </div>
     </div>
