@@ -17,6 +17,7 @@ function CartProvider({ children }) {
     const loggedInUser = JSON.parse(localStorage.getItem("loginUser"));
     if (!loggedInUser) {
       console.error("User not logged in.");
+      alert('user not log in.')
       return;
     }
     const existingProduct = cart.find((item) => item.id === product.id);

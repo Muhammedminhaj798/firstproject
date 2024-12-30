@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Logout() {
+function Admin() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Logout() {
   )
 }
 
-export default Logout
+export default Admin

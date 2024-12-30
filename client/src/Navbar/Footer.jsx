@@ -7,10 +7,13 @@ function Footer() {
       <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" />
+            <img
+              src="data:image/png;base64,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"
+              class="mr-5 h-16 sm:h-16 "
+              alt="logo"
+            />
             <p class="max-w-xs mt-4 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-              accusantium.
+            Find your perfect pair at prices that fit your budget!
             </p>
             <div class="flex mt-8 space-x-6 text-gray-600">
               <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
@@ -173,7 +176,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <p class="mt-8 text-xs text-gray-800">© 2022 Comany Name</p>
+        <p class="mt-8 text-xs text-gray-800">© 2022 FootFusion</p>
       </div>
     </footer>
   );

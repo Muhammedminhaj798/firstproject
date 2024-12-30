@@ -11,20 +11,13 @@ function AuthProvider({children}) {
         }
     },[])
 
-    const loginUser = (user) => {
-        setUser(user);
-        localStorage.setItem('loginUser', JSON.stringify(user))
-    }
 
-    const logoutUser = ()=>{
-        setUser(null);
-        localStorage.removeItem('loginUser')
-    };
+
 
 
   return (
     <div>
-      <AuthContext.Provider value={{user,loginUser,logoutUser}}>
+      <AuthContext.Provider value={{user}}>
         {children}
       </AuthContext.Provider>
     </div>

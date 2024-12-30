@@ -4,23 +4,24 @@ import { ProductContext } from "../context/Context";
 import { AuthContext } from "../context/AuthProvider";
 import { CartContext } from "../context/CartProvider";
 
-function Man() {
-  const [men, setMen] = useState([]);
+function Women() {
+  const [women, setWomen] = useState([]);
   const { data } = useContext(ProductContext);
   const { user } = useContext(AuthContext);
-  const { addToCart, cart } = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
   const navigate = useNavigate();
 
+  //check the women collections
   useEffect(() => {
-    if (data && data.length > 0) {
-      setMen(data.filter((man) => man.type === "men"));
+    if (data) {
+      setWomen(data.filter((item) => item.type === "women"));
     }
   }, [data]);
 
+  //click the button function
   const handleAddToCart = (product) => {
     if (user) {
       addToCart(product);
-      alert('add to cart')
     } else {
       alert("Please log in to add products to the cart.");
       navigate("/login");
@@ -28,21 +29,24 @@ function Man() {
   };
 
   if (!data || data.length === 0) {
-    return <div>Loading...</div>;
+    return <div className="text-center text-gray-600 mt-20">Loading...</div>;
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-      {men.map((item) => (
+    <div>
+      <h1 className='text-2xl font-serif mt-4 ml-8'>Womens Collections</h1>
+      <hr/>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 sm:p-6*">
+      {women.map((item) => (
         <div
-          key={item.id} 
+          key={item.id}
           className="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
         >
           <Link to={`productdetails/${item.id}`}>
             <img
               src={item.image}
               alt={item.name}
-              className="w-full h-48 object-cover"
+              className="w-full h-auto object-cover aspect-video"
             />
           </Link>
           <div className="p-4">
@@ -53,7 +57,7 @@ function Man() {
               </span>
               <button
                 onClick={() => handleAddToCart(item)}
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                className="bg-blue-500 text-white text-sm px-3 py-2 rounded hover:bg-blue-600 transition"
               >
                 Add to Cart
               </button>
@@ -62,7 +66,8 @@ function Man() {
         </div>
       ))}
     </div>
+    </div>
   );
 }
 
-export default Man;
+export default Women;

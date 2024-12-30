@@ -2,7 +2,7 @@
   "product": [
     {
       "id": "1",
-      "name": "Men’s Black Running",
+      "name": "Black Running",
       "type": "men",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005-400x400.jpg",
       "price": "996",
@@ -14,7 +14,7 @@
     },
     {
       "id": "2",
-      "name": "Men’s Classic Blue",
+      "name": "Classic Blue",
       "type": "men",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019-600x600.jpg",
       "price": "1600",
@@ -26,7 +26,7 @@
     },
     {
       "id": "3",
-      "name": "Men’s Classic Mint",
+      "name": "Classic Mint",
       "type": "men",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-020-600x600.jpg",
       "price": 1799,
@@ -38,7 +38,7 @@
     },
     {
       "id": "4",
-      "name": "Men’s Earth-Tone Sneaker",
+      "name": "Earth-Tone Sneaker",
       "type": "men",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-017-600x600.jpg",
       "price": 749,
@@ -50,7 +50,7 @@
     },
     {
       "id": "5",
-      "name": "Men’s Green Running",
+      "name": "Green Running",
       "type": "men",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-007-600x600.jpg",
       "price": 769,
@@ -62,7 +62,7 @@
     },
     {
       "id": "6",
-      "name": "Men’s Moonstone Sneaker",
+      "name": "Moonstone Sneaker",
       "type": "men",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-018-600x600.jpg",
       "price": 749,
@@ -74,7 +74,7 @@
     },
     {
       "id": "7",
-      "name": "Men’s Navy Running",
+      "name": "Navy Running",
       "type": "men",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-008-600x600.jpg",
       "price": 1049,
@@ -86,7 +86,7 @@
     },
     {
       "id": "8",
-      "name": "Men’s Red Running",
+      "name": "Red Running",
       "type": "men",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-006-600x600.jpg",
       "price": 1049,
@@ -98,7 +98,7 @@
     },
     {
       "id": "9",
-      "name": "Women’s Blue Training",
+      "name": "Blue Training",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-003-600x600.jpg",
       "price": 660,
@@ -110,7 +110,7 @@
     },
     {
       "id": "10",
-      "name": "Women’s Candy City Run",
+      "name": "Candy City Run",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-014-600x600.jpg",
       "price": 549,
@@ -122,7 +122,7 @@
     },
     {
       "id": "11",
-      "name": "Women’s Choco City Run",
+      "name": "Choco City Run",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-013-600x600.jpg",
       "price": 549,
@@ -134,7 +134,7 @@
     },
     {
       "id": "12",
-      "name": "Women’s Cream Suede",
+      "name": "Cream Suede",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-015-600x600.jpg",
       "price": 949,
@@ -146,7 +146,7 @@
     },
     {
       "id": "13",
-      "name": "Women’s Green Training",
+      "name": "Green Training",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-001-600x600.jpg",
       "price": 449,
@@ -158,7 +158,7 @@
     },
     {
       "id": "14",
-      "name": "Women’s Mint Sneaker",
+      "name": "Mint Sneaker",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-010-600x600.jpg",
       "price": 899,
@@ -170,7 +170,7 @@
     },
     {
       "id": "15",
-      "name": "Women’s Orange Sneaker",
+      "name": "Orange Sneaker",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-009-600x600.jpg",
       "price": 899,
@@ -182,7 +182,7 @@
     },
     {
       "id": "16",
-      "name": "Women’s Peach Training",
+      "name": "Peach Training",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-002-600x600.jpg",
       "price": 499,
@@ -194,7 +194,7 @@
     },
     {
       "id": "17",
-      "name": "Women’s Purple Sneaker",
+      "name": "Purple Sneaker",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-012-600x600.jpg",
       "price": 849,
@@ -206,7 +206,7 @@
     },
     {
       "id": "18",
-      "name": "Women’s Recycled Runner",
+      "name": "Recycled Runner",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-011-600x600.jpg",
       "price": 949,
@@ -218,7 +218,7 @@
     },
     {
       "id": "19",
-      "name": "Women's White Sneaker",
+      "name": "White Sneaker",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-016-600x600.jpg",
       "price": 799,
@@ -230,7 +230,7 @@
     },
     {
       "id": "20",
-      "name": "Women’s Yellow Training",
+      "name": "Yellow Training",
       "type": "women",
       "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-004-600x600.jpg",
       "price": 499,
@@ -504,7 +504,7 @@
     },
     {
       "id": "1009",
-      "name": "kid’s Black Running",
+      "name": "Black Running",
       "type": "kids",
       "image": "https://i.pinimg.com/736x/e4/80/72/e48072ae236828a63a644de0af8f4e41.jpg",
       "price": 799,
@@ -516,7 +516,7 @@
     },
     {
       "id": "1010",
-      "name": "kid’s Classic Blue",
+      "name": "Classic Blue",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/73/65/95/7365952f9294e7f5cb67bae909bdfa0d.jpg",
       "price": 1699,
@@ -528,7 +528,7 @@
     },
     {
       "id": "1011",
-      "name": "kid’s Classic Mint",
+      "name": "Classic Mint",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/d3/ad/33/d3ad33e7a6b0a79ae44f3f78cb43e770.jpg",
       "price": 1799,
@@ -540,7 +540,7 @@
     },
     {
       "id": "1013",
-      "name": "kid’s Earth-Tone Sneaker",
+      "name": "Earth-Tone Sneaker",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/9b/46/9d/9b469ddc5473d77cba43a1c3ea6acade.jpg",
       "price": 749,
@@ -552,7 +552,7 @@
     },
     {
       "id": "1016",
-      "name": "kid’s Green Running",
+      "name": "Green Running",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/a5/6e/42/a56e4260dfb3f382301350c65be24988.jpg",
       "price": 769,
@@ -564,7 +564,7 @@
     },
     {
       "id": "1017",
-      "name": "kid’s Moonstone Sneaker",
+      "name": "Moonstone Sneaker",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/dc/fb/09/dcfb097b72fe3d26e8c64c91572fce66.jpg",
       "price": 749,
@@ -576,7 +576,7 @@
     },
     {
       "id": "1018",
-      "name": "kid’s Navy Running",
+      "name": "Navy Running",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/7c/0f/ae/7c0faeea6132ad2d09e1ca8290f37622.jpg",
       "price": 1049.9,
@@ -588,7 +588,7 @@
     },
     {
       "id": "1019",
-      "name": "kid’s Red Running",
+      "name": "Red Running",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/f8/49/b4/f849b4c482f95e181728eccb818ab0aa.jpg",
       "price": 1049.9,
@@ -600,7 +600,7 @@
     },
     {
       "id": "1020",
-      "name": "kid’s Blue Training",
+      "name": "Blue Training",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/fe/19/85/fe19852beaf6dc986d1c9451dbc4b78a.jpg",
       "price": 660,
@@ -612,7 +612,7 @@
     },
     {
       "id": "1021",
-      "name": "kid’s Candy City Run",
+      "name": "Candy City Run",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/92/44/48/9244484d3e11fdaf602fc469673e800a.jpg",
       "price": 549,
@@ -624,7 +624,7 @@
     },
     {
       "id": "1022",
-      "name": "kid’s Choco City Run",
+      "name": "Choco City Run",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/45/76/e9/4576e92a9dc577558ae27e1a4d0e0298.jpg",
       "price": 549,
@@ -636,7 +636,7 @@
     },
     {
       "id": "1023",
-      "name": "kid’s Cream Suede",
+      "name": "Cream Suede",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/c3/01/9f/c3019f8aabb6610110725f6cb2d2598e.jpg",
       "price": 949.9,
@@ -648,7 +648,7 @@
     },
     {
       "id": "1024",
-      "name": "kid’s Green Training",
+      "name": "Green Training",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/c8/64/e4/c864e436e343a0245e542e2f88a392f1.jpg",
       "price": 449.9,
@@ -660,7 +660,7 @@
     },
     {
       "id": "1025",
-      "name": "kid’s Mint Sneaker",
+      "name": "Mint Sneaker",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/d2/56/b6/d256b693fc54d7b82c4aa70cbef1fd49.jpg",
       "price": 899.9,
@@ -672,7 +672,7 @@
     },
     {
       "id": "1026",
-      "name": "kid’s Orange Sneaker",
+      "name": "Orange Sneaker",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/b9/81/bf/b981bf4df65620be0c399962912bd4d3.jpg",
       "price": 899.9,
@@ -684,7 +684,7 @@
     },
     {
       "id": "1027",
-      "name": "kid’s Peach Training",
+      "name": "Peach Training",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/b6/5e/d3/b65ed38cc7625e5dff7c4413e2e6ba0f.jpg",
       "price": 549.9,
@@ -696,7 +696,7 @@
     },
     {
       "id": "1028",
-      "name": "kid’s Pink Suede",
+      "name": "Pink Suede",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/02/ef/c1/02efc14ae8321ca9251d840cbc1b5c1b.jpg",
       "price": 599.9,
@@ -708,7 +708,7 @@
     },
     {
       "id": "1029",
-      "name": "kid’s Pink Training",
+      "name": "Pink Training",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/9a/d3/10/9ad310dbecedcb906439d5d34eeacb21.jpg",
       "price": 549.9,
@@ -720,7 +720,7 @@
     },
     {
       "id": "1030",
-      "name": "kid’s Tan Sneaker",
+      "name": "Tan Sneaker",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/49/54/01/49540115044aa8d581bbb65b385e6033.jpg",
       "price": 899,
@@ -732,7 +732,7 @@
     },
     {
       "id": "1031",
-      "name": "kid’s Tosca City Run",
+      "name": "Tosca City Run",
       "type": "kid",
       "image": "https://i.pinimg.com/736x/c0/fb/b8/c0fbb88d0faa724ad4da725cd3279156.jpg",
       "price": 649,
@@ -841,7 +841,21 @@
       "id": "f02d",
       "username": "shahid",
       "email": "shahid123@gmail.com",
-      "password": "111111"
+      "password": "111111",
+      "cart": [
+        {
+          "id": "1",
+          "name": "Men’s Black Running",
+          "type": "men",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005-400x400.jpg",
+          "price": "996",
+          "qty": 1,
+          "description": "Comfortable and durable black running shoes for men.",
+          "brand": "Recycled Shoes",
+          "rating": 4.5,
+          "reviews": 12
+        }
+      ]
     },
     {
       "id": "2bcb",
@@ -876,11 +890,155 @@
       "cpassword": "000000"
     },
     {
-      "id": "f8f2",
-      "username": "shamsudheen",
-      "email": "shamsu123@gmail.com",
+      "cart": [],
+      "id": "f8f2"
+    },
+    {
+      "id": "4083",
+      "username": "danish",
+      "email": "danish123@gmail.com",
+      "password": "555555",
+      "cpassword": "555555",
+      "cart": [
+        {
+          "id": "10",
+          "name": "Women’s Candy City Run",
+          "type": "women",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-014-600x600.jpg",
+          "price": 549,
+          "qty": 1,
+          "description": "Colorful running shoes perfect for urban environments.",
+          "brand": "Recycled Shoes",
+          "rating": 4.3,
+          "reviews": 12
+        },
+        {
+          "id": "11",
+          "name": "Women’s Choco City Run",
+          "type": "women",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-013-600x600.jpg",
+          "price": 549,
+          "qty": 1,
+          "description": "Chocolate-colored running shoes for women.",
+          "brand": "Recycled Shoes",
+          "rating": 4.4,
+          "reviews": 8
+        },
+        {
+          "id": "12",
+          "name": "Women’s Cream Suede",
+          "type": "women",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-015-600x600.jpg",
+          "price": 949,
+          "qty": 1,
+          "description": "Elegant cream suede sneakers.",
+          "brand": "Recycled Shoes",
+          "rating": 4.6,
+          "reviews": 9
+        }
+      ]
+    },
+    {
+      "id": "56d5",
+      "username": "danish",
+      "email": "danish123@gmail.com",
+      "password": "555555",
+      "cpassword": "555555"
+    },
+    {
+      "cart": [],
+      "id": "7df8"
+    },
+    {
+      "id": "5329",
+      "username": "adhil",
+      "email": "adhil123@gmail.com",
+      "password": "444444",
+      "cpassword": "444444"
+    },
+    {
+      "id": "8bcf",
+      "username": "rinshad",
+      "email": "rinshad123@gmail.com",
+      "password": "222222",
+      "cpassword": "222222",
+      "cart": [
+        {
+          "id": "2",
+          "name": "Men’s Classic Blue",
+          "type": "men",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-019-600x600.jpg",
+          "price": "1600",
+          "qty": 2,
+          "description": "Classic blue sneakers perfect for everyday wear.",
+          "brand": "Recycled Shoes",
+          "rating": 4.7,
+          "reviews": 8
+        }
+      ]
+    },
+    {
+      "id": "3ab9",
+      "username": "rinshad",
+      "email": "rinshad123@gmail.com",
+      "password": "222222",
+      "cpassword": "222222"
+    },
+    {
+      "id": "a85a",
+      "username": "shahid",
+      "email": "shahid123@gmail.com",
+      "password": "111111",
+      "cpassword": "111111"
+    },
+    {
+      "id": "6948",
+      "username": "minhaj",
+      "email": "minhaj123@gmail.com",
       "password": "123456",
       "cpassword": "123456"
+    },
+    {
+      "id": "c10d",
+      "username": "minhaj",
+      "email": "minhaj123@gmail.com",
+      "password": "123456",
+      "cpassword": "123456"
+    },
+    {
+      "id": "474b",
+      "username": "minhaj",
+      "email": "minhaj123@gmail.com",
+      "password": "000000",
+      "cpassword": "000000"
+    },
+    {
+      "id": "86f7",
+      "username": "minhaj",
+      "email": "minza@gmail.com",
+      "password": "121212",
+      "cpassword": "121212",
+      "cart": [
+        {
+          "id": "1",
+          "name": "Men’s Black Running",
+          "type": "men",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-005-400x400.jpg",
+          "price": "996",
+          "qty": 6,
+          "description": "Comfortable and durable black running shoes for men.",
+          "brand": "Recycled Shoes",
+          "rating": 4.5,
+          "reviews": 12
+        }
+      ]
+    },
+    {
+      "id": "89c7",
+      "username": "minzafathima",
+      "email": "minza@gmail.com",
+      "password": "121212",
+      "cpassword": "121212"
     }
   ]
 }

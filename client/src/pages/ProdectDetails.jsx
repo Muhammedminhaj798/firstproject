@@ -1,82 +1,75 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { ProductContext } from '../context/Context'
-
+import React, { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { ProductContext } from "../context/Context";
+import { CartContext } from "../context/CartProvider";
+import { AuthContext } from "../context/AuthProvider";
 
 function ProdectDetails() {
-    const {id} = useParams()
-    const {data} = useContext(ProductContext)
-    console.log(data);
-    
-    const [state,setState] = useState([])
-    console.log(state);
-    
-    useEffect(()=>{
-        const filter = data.filter((filt) => filt.id == id)
-        setState(filter)
-    },[data])
+  const { id } = useParams();
+  const { data } = useContext(ProductContext);
+  const {addToCart} = useContext(CartContext)
+  const {user} = useContext(AuthContext)
+
+  const [state, setState] = useState([]);
+
+  useEffect(() => {
+    const filter = data.filter((filt) => filt.id == id);
+    setState(filter);
+  }, [data, id]);
+  const handleAddToCart = (product) => {
+    if (user) {
+      addToCart(product);
+      alert('add to cart')
+    } else {
+      alert("Please log in to add products to the cart.");
+      navigate("/login");
+    }
+  };
+
   return (
-    <div>
-        {state.map((item)=>(
-            <div className="min-w-screen min-h-screen bg-yellow-300 flex items-center p-5 lg:p-10 overflow-hidden relative">
-            <div className="w-full max-w-6xl rounded bg-white shadow-xl p-10 lg:p-20 mx-auto text-gray-800 relative md:text-left">
-              <div className="md:flex items-center -mx-10">
-                <div className="w-full md:w-1/2 px-10 mb-10 md:mb-0">
-                  <div className="relative">
-                    <img
-                      src={item.image}
-                      className="w-full relative z-10"
-                      alt="Waterproof Jacket"
-                    />
-                    <div className="border-4 border-yellow-200 absolute top-10 bottom-10 left-10 right-10 z-0"></div>
-                  </div>
-                </div>
-                <div className="w-full md:w-1/2 px-10">
-                  <div className="mb-10">
-                    <h1 className="font-bold uppercase text-2xl mb-5">
-                      {item.name}
-                    </h1>
-                    <p className="text-sm">
-                      {item.description}
-                    </p>
-                  </div>
-                  <div>
-                    <div className="inline-block align-bottom mr-5">
-                      <span className="text-5xl leading-none align-baseline">₹ </span>
-                      <span className="font-bold text-5xl leading-none align-baseline">{item.price}</span>
-                      <span className="text-2xl leading-none align-baseline">.99</span>
-                    </div>
-                    <div className="inline-block align-bottom">
-                      <button className="bg-yellow-300 opacity-75 hover:opacity-100 text-yellow-900 hover:text-gray-900 rounded-full px-10 py-2 font-semibold">
-                        <i className="mdi mdi-cart -ml-2 mr-2"></i> BUY NOW
-                      </button>
-                    </div>
-                  </div>
-                </div>
+    <div className="min-w-screen min-h-screen bg-yellow-300 flex items-center justify-center p-5 lg:p-10">
+      {state.map((item) => (
+        <div
+          key={item.id}
+          className="w-full max-w-4xl rounded bg-white shadow-xl p-6 sm:p-8 lg:p-10 mx-auto text-gray-800 relative"
+        >
+          <div className="flex flex-col md:flex-row items-center md:items-start md:-mx-4">
+            {/* Image Section */}
+            <div className="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+              <div className="relative">
+                <img
+                  src={item.image}
+                  className="w-full rounded-lg object-cover"
+                  alt={item.name}
+                />
+                <div className="border-4 border-yellow-200 absolute top-4 left-4 right-4 bottom-4 z-0"></div>
               </div>
             </div>
-      
-            <div className="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
-              <div>
-                <a
-                  title="Buy me a beer"
-                  href="https://www.buymeacoffee.com/scottwindon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
-                >
-                  <img
-                    className="object-cover object-center w-full h-full rounded-full"
-                    src={item.image}
-                    alt="Buy me a coffee"
-                  />
-                </a>
+
+            {/* Details Section */}
+            <div className="w-full md:w-1/2 px-4">
+              <h1 className="font-bold uppercase text-xl sm:text-2xl mb-4">
+                {item.name}
+              </h1>
+              <p className="text-sm sm:text-base text-gray-600 mb-6">
+                {item.description}
+              </p>
+
+              <div className="flex items-center justify-between mb-6">
+                <div className="text-4xl sm:text-5xl font-bold text-yellow-500">
+                  ₹ {item.price}.99
+                </div>
               </div>
+
+              <button onClick={() => handleAddToCart(item)} className="bg-yellow-300 hover:bg-yellow-400 text-yellow-900 font-semibold rounded-full px-6 py-2">
+                Add to Cart
+              </button>
             </div>
           </div>
-        ))}
+        </div>
+      ))}
     </div>
-  )
+  );
 }
 
-export default ProdectDetails
+export default ProdectDetails;

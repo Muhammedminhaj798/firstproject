@@ -4,41 +4,44 @@ import { ProductContext } from "../context/Context";
 import { AuthContext } from "../context/AuthProvider";
 import { CartContext } from "../context/CartProvider";
 
-function Kids() {
-  const [kids, setKids] = useState([]);
+function Man() {
+  const [men, setMen] = useState([]);
   const { data } = useContext(ProductContext);
   const { user } = useContext(AuthContext);
-  const {addToCart} = useContext(CartContext);
-  const navigate = useNavigate()
+  const { addToCart, cart } = useContext(CartContext);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const filter = data.filter((kidd) => kidd.type === "kid");
-    setKids(filter);
+    if (data && data.length > 0) {
+      setMen(data.filter((man) => man.type === "men"));
+    }
   }, [data]);
 
   const handleAddToCart = (product) => {
-    if (user){
-      
-      alert('your item added to cart successfully');
+    if (user) {
       addToCart(product);
-    }else{
-      alert('please log in to add products to the cart');
-      navigate('/login');
+      alert('add to cart')
+    } else {
+      alert("Please log in to add products to the cart.");
+      navigate("/login");
     }
   };
 
-  if(!data || data.length === 0){
-    return <div>Loading...</div>
+  if (!data || data.length === 0) {
+    return <div>Loading...</div>;
   }
 
   return (
+    <div>
+      <h1 className='text-2xl font-serif mt-4 ml-8'>Mens Collections</h1>
+      <hr/>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-      {kids.map((item) => (
+      {men.map((item) => (
         <div
-          key={item.id}
+          key={item.id} 
           className="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
         >
-          <Link key={item.id} to={`productdetails/${item.id}`}>
+          <Link to={`productdetails/${item.id}`}>
             <img
               src={item.image}
               alt={item.name}
@@ -51,7 +54,10 @@ function Kids() {
               <span className="text-lg font-bold text-gray-800">
                 ₹{item.price}
               </span>
-              <button onClick={()=>handleAddToCart(item)} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+              <button
+                onClick={() => handleAddToCart(item)}
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+              >
                 Add to Cart
               </button>
             </div>
@@ -59,7 +65,8 @@ function Kids() {
         </div>
       ))}
     </div>
+    </div>
   );
 }
 
-export default Kids;
+export default Man;
