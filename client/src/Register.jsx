@@ -34,6 +34,7 @@ function Register() {
         email: input.email,
         password: input.password,
         cpassword: input.cpassword,
+        role:"user",
       });
 
       alert("user registered successfully");

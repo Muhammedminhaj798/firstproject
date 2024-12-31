@@ -4,48 +4,54 @@ import axios from "axios";
 import { UsersContext } from "./context/UserContext";
 
 function Login() {
-  const [input,setInput] = useState({
-        email : '',
-        password : ''
-  })
-  const {datas} = useContext(UsersContext)
-  console.log(datas);
+  const [input, setInput] = useState({
+    email: "",
+    password: "",
+  });
+  const { datas } = useContext(UsersContext);
   
-  console.log("input",  input);
+
   
-  const handleFocus = ()=>{
-    setFocus(true)
-  }
+
+  const handleFocus = () => {
+    setFocus(true);
+  };
   const [focus, setFocus] = useState({
-    errName : false,
-    errEmail : false,
-    errPassword : false
-  })
+    errName: false,
+    errEmail: false,
+    errPassword: false,
+  });
 
   const navigate = useNavigate();
 
-  const handleData =async (e) => {
-  
-    const user = datas.find((item) => item.email == input.email && item.password == input.password)
-    if(user){
-      localStorage.setItem('loginUser',JSON.stringify(user))
-      alert('login successfully')
-      navigate("/")
-    }else{
-      alert('invalid')
-      navigate('/register')
-    }
+  const handleData = async (e) => {
+    const user = datas.find(
+      (item) => item.email === input.email && item.password === input.password
+    );
+    console.log(user);
     
-
-  
-  }
+    if (user.role === "admin") {
+      localStorage.setItem("loginUser", JSON.stringify(user));
+      alert("welcome admin");
+      navigate("/admin_home");
+      // localStorage.setItem('loginUser',JSON.stringify(user))
+      // alert('login successfully')
+      // navigate("/")
+    } else if (user) {
+      localStorage.setItem("loginUser", JSON.stringify(user));
+      alert("login successfully");
+      navigate("/");
+    } else {
+      alert("invalid");
+      navigate("/register");
+    }
+  };
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
     console.log(`Name: ${name}, Value: ${value}`);
     setInput({ ...input, [name]: value });
   };
-  
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
@@ -77,7 +83,7 @@ function Login() {
           >
             Login
           </button>
-          <Link to={'/register'}>Create a new Account</Link>
+          <Link to={"/register"}>Create a new Account</Link>
         </form>
       </div>
     </div>

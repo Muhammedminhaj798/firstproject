@@ -23,7 +23,7 @@ function Women() {
     if (user) {
       addToCart(product);
     } else {
-      alert("Please log in to add products to the cart.");
+
       navigate("/login");
     }
   };

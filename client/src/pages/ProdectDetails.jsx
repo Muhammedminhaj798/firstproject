@@ -19,9 +19,9 @@ function ProdectDetails() {
   const handleAddToCart = (product) => {
     if (user) {
       addToCart(product);
-      alert('add to cart')
+      // alert('add to cart')
     } else {
-      alert("Please log in to add products to the cart.");
+      // alert("Please log in to add products to the cart.");
       navigate("/login");
     }
   };

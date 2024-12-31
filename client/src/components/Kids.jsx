@@ -18,11 +18,9 @@ function Kids() {
 
   const handleAddToCart = (product) => {
     if (user){
-      
-      alert('your item added to cart successfully');
       addToCart(product);
     }else{
-      alert('please log in to add products to the cart');
+
       navigate('/login');
     }
   };

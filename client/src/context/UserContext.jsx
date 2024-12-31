@@ -15,7 +15,7 @@ const [datas,setDatas]=useState([])
     }
     featch()
   },[])
-  console.log("datas",datas);
+  // console.log("datas",datas);
 
 
 

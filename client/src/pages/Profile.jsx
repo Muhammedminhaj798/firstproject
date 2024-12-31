@@ -39,6 +39,7 @@ function Profile() {
     </>
   ) : (
     <Link to={'/login'}>
+      <h1 className='text-3xl'>please login the website...</h1>
     <button className="w-48 h-10 mt-96 mx-[600px] bg-gray-600">Login</button>
     </Link>
   )}

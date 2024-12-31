@@ -62,6 +62,12 @@ function App() {
               path="/collections/productdetails/:id"
               element={<ProdectDetails />}
             />
+            <Route
+              path="/admin_home/productdetails/:id"
+              element={<ProdectDetails/>}/>
+            <Route
+              path="*"
+              element={<h1>not found</h1>}/>
           </Routes>
           <Footer />
         </CartProvider>

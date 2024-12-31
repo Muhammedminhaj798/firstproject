@@ -817,7 +817,8 @@
       "id": "eeac",
       "username": "minzafathima",
       "email": "minza@gmail.com",
-      "password": "000000"
+      "password": "000000",
+      "role":"admin"
     },
     {
       "id": "a32f",
@@ -1039,6 +1040,34 @@
       "email": "minza@gmail.com",
       "password": "121212",
       "cpassword": "121212"
+    },
+    {
+      "id": "331c",
+      "username": "muhammedminhaj",
+      "email": "muhammedminhaj798@gmail.com",
+      "password": "MinhaJ",
+      "cpassword": "MinhaJ",
+      "cart": [
+        {
+          "id": "10",
+          "name": "Candy City Run",
+          "type": "women",
+          "image": "https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-product-image-014-600x600.jpg",
+          "price": 549,
+          "qty": 2,
+          "description": "Colorful running shoes perfect for urban environments.",
+          "brand": "Recycled Shoes",
+          "rating": 4.3,
+          "reviews": 12
+        }
+      ]
+    },
+    {
+      "id": "fc10",
+      "username": "minhaj",
+      "email": "muhammedminhaj798@gmail.com",
+      "password": "MinhaJ",
+      "cpassword": "MinhaJ"
     }
   ]
 }
