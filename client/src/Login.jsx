@@ -9,9 +9,6 @@ function Login() {
     password: "",
   });
   const { datas } = useContext(UsersContext);
-  
-
-  
 
   const handleFocus = () => {
     setFocus(true);
@@ -29,12 +26,12 @@ function Login() {
       (item) => item.email === input.email && item.password === input.password
     );
     console.log(user);
-    
+
     if (user.role === "admin") {
       localStorage.setItem("loginUser", JSON.stringify(user));
       alert("welcome admin");
       navigate("/admin_home");
-      // localStorage.setItem('loginUser',JSON.stringify(user))
+      localStorage.setItem("Admin", JSON.stringify(user));
       // alert('login successfully')
       // navigate("/")
     } else if (user) {

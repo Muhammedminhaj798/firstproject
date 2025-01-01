@@ -6,7 +6,7 @@ function AdmProduct() {
   const { data } = useContext(ProductContext);
 
   return (
-    <div>
+    <div className="">
       {/* <h1>Product List</h1> */}
       <table border="1" style={{ width: "100%", textAlign: "left" }}>
         <thead>
