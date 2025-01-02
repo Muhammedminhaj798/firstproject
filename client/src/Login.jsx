@@ -28,9 +28,9 @@ function Login() {
     console.log(user);
 
     if (user.role === "admin") {
-      localStorage.setItem("loginUser", JSON.stringify(user));
+      // localStorage.setItem("loginUser", JSON.stringify(user));
       alert("welcome admin");
-      navigate("/admin_home");
+      navigate("/admin-product");
       localStorage.setItem("Admin", JSON.stringify(user));
       // alert('login successfully')
       // navigate("/")

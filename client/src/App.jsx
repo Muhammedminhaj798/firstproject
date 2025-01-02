@@ -22,6 +22,7 @@ import Profile from "./pages/Profile";
 import HomeAdmin from "./admin/HomeAdmin";
 import AdmProduct from "./admin/AdmProduct";
 import Users from "./admin/Users";
+import UserDetails from "./admin/UserDetails";
 
 function App() {
   const admin = localStorage.getItem("Admin");
@@ -30,7 +31,7 @@ function App() {
       <AuthProvider>
         <CartProvider>
           {!admin ? (
-            <>
+            <> 
               <Navbar />
               <Routes>
                 <Route path="/register" element={<Register />} />
@@ -67,6 +68,7 @@ function App() {
                 />
                 <Route path="*" element={<h1>not found</h1>} />
               </Routes>
+              <Footer />
             </>
           ) : (
             <>
@@ -75,11 +77,17 @@ function App() {
                 <Route path="/admin_home" element={<HomeAdmin />} />
                 <Route path="/admin-product" element={<AdmProduct />} />
                 <Route path="/admin_users" element={<Users />} />
+                {/* <Route path="/user_details" element={<UserDetails />} /> */}
+                
+                <Route
+                 path="/admin_users/user_details/:id"
+                 element={<UserDetails/>}/>
+                 <Route path="*" element={<h1>not found</h1>} />
               </Routes>
             </>
           )}
 
-          <Footer />
+          
         </CartProvider>
       </AuthProvider>
     </UsersProvider>

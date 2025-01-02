@@ -505,7 +505,7 @@
     {
       "id": "1009",
       "name": "Black Running",
-      "type": "kids",
+      "type": "kid",
       "image": "https://i.pinimg.com/736x/e4/80/72/e48072ae236828a63a644de0af8f4e41.jpg",
       "price": 799,
       "qty": 1,
@@ -891,10 +891,6 @@
       "cpassword": "000000"
     },
     {
-      "cart": [],
-      "id": "f8f2"
-    },
-    {
       "id": "4083",
       "username": "danish",
       "email": "danish123@gmail.com",
@@ -945,10 +941,6 @@
       "email": "danish123@gmail.com",
       "password": "555555",
       "cpassword": "555555"
-    },
-    {
-      "cart": [],
-      "id": "7df8"
     },
     {
       "id": "5329",

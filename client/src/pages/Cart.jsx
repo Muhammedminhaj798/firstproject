@@ -15,7 +15,7 @@ const Cart = () => {
     const loggedInUser = JSON.parse(localStorage.getItem("loginUser"));
     if (loggedInUser) {
       setUser(loggedInUser);
-      setCart(loggedInUser.cart || []);   
+      setCart(loggedInUser.cart || []);
     } else {
       navigate("/login");
     }
